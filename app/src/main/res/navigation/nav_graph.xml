@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/halamanLogin">
+
+    <!-- Auth Navigation -->
+    <fragment
+        android:id="@+id/halamanLogin"
+        android:name="com.example.rotibox.ui.auth.login.HalamanLogin"
+        android:label="Login">
+        <action
+            android:id="@+id/action_login_to_daftar"
+            app:destination="@id/halamanDaftar" />
+        <action
+            android:id="@+id/action_login_to_beranda_pelanggan"
+            app:destination="@id/halamanBerandaPelanggan"
+            app:popUpTo="@id/halamanLogin"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_login_to_beranda_admin"
+            app:destination="@id/halamanBerandaAdmin"
+            app:popUpTo="@id/halamanLogin"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/halamanDaftar"
+        android:name="com.example.rotibox.ui.auth.daftar.HalamanDaftar"
+        android:label="Daftar" />
+
+    <!-- Pelanggan Navigation -->
+    <fragment
+        android:id="@+id/halamanBerandaPelanggan"
+        android:name="com.example.rotibox.ui.pelanggan.beranda.HalamanBerandaPelanggan"
+        android:label="Beranda">
+        <action
+            android:id="@+id/action_beranda_to_detail_menu"
+            app:destination="@id/halamanDetailMenu" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/halamanDetailMenu"
+        android:name="com.example.rotibox.ui.pelanggan.detail_menu.HalamanDetailMenu"
+        android:label="Detail Menu">
+        <argument
+            android:name="menuId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/halamanKeranjang"
+        android:name="com.example.rotibox.ui.pelanggan.keranjang.HalamanKeranjang"
+        android:label="Keranjang">
+        <action
+            android:id="@+id/action_keranjang_to_checkout"
+            app:destination="@id/halamanCheckout" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/halamanCheckout"
+        android:name="com.example.rotibox.ui.pelanggan.checkout.HalamanCheckout"
+        android:label="Checkout" />
+
+    <fragment
+        android:id="@+id/halamanPesananSaya"
+        android:name="com.example.rotibox.ui.pelanggan.pesanan_saya.HalamanPesananSaya"
+        android:label="Pesanan Saya">
+        <action
+            android:id="@+id/action_pesanan_to_detail_pesanan"
+            app:destination="@id/halamanDetailPesanan" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/halamanDetailPesanan"
+        android:name="com.example.rotibox.ui.pelanggan.detail_pesanan.HalamanDetailPesanan"
+        android:label="Detail Pesanan">
+        <argument
+            android:name="orderId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/halamanProfil"
+        android:name="com.example.rotibox.ui.pelanggan.profil.HalamanProfil"
+        android:label="Profil">
+        <action
+            android:id="@+id/action_profil_to_login"
+            app:destination="@id/halamanLogin"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Admin Navigation -->
+    <fragment
+        android:id="@+id/halamanBerandaAdmin"
+        android:name="com.example.rotibox.ui.admin.beranda_admin.HalamanBerandaAdmin"
+        android:label="Beranda Admin">
+        <action
+            android:id="@+id/action_beranda_admin_to_kelola_menu"
+            app:destination="@id/halamanKelolaMenu" />
+        <action
+            android:id="@+id/action_beranda_admin_to_kelola_pesanan"
+            app:destination="@id/halamanKelolaPesanan" />
+        <action
+            android:id="@+id/action_beranda_admin_to_laporan"
+            app:destination="@id/halamanLaporanPenjualan" />
+        <action
+            android:id="@+id/action_admin_to_login"
+            app:destination="@id/halamanLogin"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/halamanKelolaMenu"
+        android:name="com.example.rotibox.ui.admin.kelola_menu.HalamanKelolaMenu"
+        android:label="Kelola Menu">
+        <action
+            android:id="@+id/action_kelola_menu_to_tambah_ubah"
+            app:destination="@id/halamanTambahUbahMenu" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/halamanTambahUbahMenu"
+        android:name="com.example.rotibox.ui.admin.kelola_menu.HalamanTambahUbahMenu"
+        android:label="Tambah/Ubah Menu">
+        <argument
+            android:name="menuId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/halamanKelolaPesanan"
+        android:name="com.example.rotibox.ui.admin.kelola_pesanan.HalamanKelolaPesanan"
+        android:label="Kelola Pesanan">
+        <action
+            android:id="@+id/action_kelola_pesanan_to_detail"
+            app:destination="@id/halamanDetailPesananAdmin" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/halamanDetailPesananAdmin"
+        android:name="com.example.rotibox.ui.admin.kelola_pesanan.HalamanDetailPesananAdmin"
+        android:label="Detail Pesanan">
+        <argument
+            android:name="orderId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/halamanLaporanPenjualan"
+        android:name="com.example.rotibox.ui.admin.laporan.HalamanLaporanPenjualan"
+        android:label="Laporan Penjualan" />
+
+</navigation>

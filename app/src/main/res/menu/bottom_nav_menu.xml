@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/halamanBerandaPelanggan"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="Beranda" />
+    
+    <item
+        android:id="@+id/halamanKeranjang"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Keranjang" />
+    
+    <item
+        android:id="@+id/halamanPesananSaya"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="Pesanan" />
+    
+    <item
+        android:id="@+id/halamanProfil"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Profil" />
+</menu>

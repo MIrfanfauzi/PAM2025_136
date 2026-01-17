@@ -83,8 +83,8 @@ abstract class RotiBoxDatabase : RoomDatabase() {
                     RotiBoxDatabase::class.java,
                     "rotibox_database"
                 )
-                    .addMigrations(MIGRATION_1_2, MIGRATION_2_3) // Tambah MIGRATION_2_3
-                    .addCallback(DatabaseCallback(context))
+                    .addMigrations(MIGRATION_1_2, MIGRATION_2_3)
+                    .addCallback(DatabaseCallback())
                     .build()
                 INSTANCE = instance
                 instance

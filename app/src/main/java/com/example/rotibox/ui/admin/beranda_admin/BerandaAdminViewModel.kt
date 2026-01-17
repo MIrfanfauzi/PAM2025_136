@@ -30,7 +30,9 @@ class BerandaAdminViewModel(
             
             // Total pesanan pending (menunggu konfirmasi)
             val allOrders = pesananRepository.getAllOrdersSync()
-            _totalPesananPending.value = allOrders.count { it.order.status == "pending" }
+            _totalPesananPending.value = allOrders.count { 
+                it.order.status == "menunggu_konfirmasi" || it.order.status == "pending" 
+            }
             
             // Total pesanan hari ini (pickup date = hari ini)
             val today = Calendar.getInstance()

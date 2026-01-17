@@ -52,7 +52,9 @@ fun ManageOrdersScreen(
     
     // Filter orders based on selected filter
     val filteredOrders = when (selectedFilter) {
-        "Menunggu" -> orderList.filter { it.order.status == "pending" }
+        "Menunggu" -> orderList.filter { 
+            it.order.status == "pending" || it.order.status == "menunggu_konfirmasi" 
+        }
         "Dikonfirmasi" -> orderList.filter { it.order.status == "confirmed" }
         "Selesai" -> orderList.filter { it.order.status == "completed" }
         "Dibatalkan" -> orderList.filter { it.order.status == "cancelled" }
@@ -89,7 +91,9 @@ fun ManageOrdersScreen(
                     .padding(horizontal = 16.dp, vertical = 8.dp),
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-                val pendingCount = orderList.count { it.order.status == "pending" }
+                val pendingCount = orderList.count { 
+                    it.order.status == "pending" || it.order.status == "menunggu_konfirmasi" 
+                }
                 val confirmedCount = orderList.count { it.order.status == "confirmed" }
                 val completedCount = orderList.count { it.order.status == "completed" }
                 val cancelledCount = orderList.count { it.order.status == "cancelled" }

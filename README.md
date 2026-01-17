@@ -5,10 +5,10 @@
 
 ---
 ## Tampilan Aplikasi
-<img width="800" height="350" alt="1" src="https://github.com/user-attachments/assets/40901881-17ee-4674-85cb-229e97b1906b" />
-<img width="800" height="350" alt="2" src="https://github.com/user-attachments/assets/37907a15-e58d-4cf4-85db-8539de9c5fac" />
-<img width="800" height="350" alt="3" src="https://github.com/user-attachments/assets/b8e4942c-2fb4-42a2-9c89-68fb96c08ae4" />
-<img width="800" height="350" alt="4" src="https://github.com/user-attachments/assets/851767a0-b759-4d95-b099-b5ee616671c0" />
+<img width="1600" height="700" alt="1" src="https://github.com/user-attachments/assets/853431ff-5f57-4031-8a72-a9055c3bd5aa" />
+<img width="1600" height="700" alt="2" src="https://github.com/user-attachments/assets/509bcfe8-6262-4509-bd76-7564a21dd16f" />
+<img width="1600" height="700" alt="3" src="https://github.com/user-attachments/assets/c7a19ca8-fa4a-4fb4-a465-30b6dc52744b" />
+<img width="1600" height="700" alt="4" src="https://github.com/user-attachments/assets/854b9299-f6fb-4916-873f-2673d7130e3f" />
 
 ## � Daftar Isi
 

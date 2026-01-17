@@ -4,6 +4,11 @@
 > Aplikasi pemesanan roti berbasis Android dengan fitur manajemen menu, keranjang belanja, dan laporan penjualan.
 
 ---
+## Tampilan Aplikasi
+<img width="1600" height="700" alt="1" src="https://github.com/user-attachments/assets/853431ff-5f57-4031-8a72-a9055c3bd5aa" />
+<img width="1600" height="700" alt="2" src="https://github.com/user-attachments/assets/509bcfe8-6262-4509-bd76-7564a21dd16f" />
+<img width="1600" height="700" alt="3" src="https://github.com/user-attachments/assets/c7a19ca8-fa4a-4fb4-a465-30b6dc52744b" />
+<img width="1600" height="700" alt="4" src="https://github.com/user-attachments/assets/854b9299-f6fb-4916-873f-2673d7130e3f" />
 
 ## � Daftar Isi
 

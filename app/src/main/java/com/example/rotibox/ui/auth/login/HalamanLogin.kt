@@ -102,7 +102,7 @@ fun LoginScreen(
             )
             
             Text(
-                text = "Toko Roti Online",
+                text = "Aplikasi Toko Roti",
                 style = MaterialTheme.typography.bodyLarge,
                 color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.7f)
             )
@@ -184,7 +184,7 @@ fun LoginScreen(
             
             // Info Text
             Text(
-                text = "Gunakan admin@rotibox.com / admin123 untuk login sebagai admin",
+                text = "Selamat berbelanja dan menikmati hidangan RotiBox!",
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.5f),
                 textAlign = TextAlign.Center,
